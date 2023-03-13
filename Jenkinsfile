@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'maven:3.9.0-eclipse-temurin-11' } }
+    agent any
     stages {
         stage('build') {
             steps {
@@ -8,7 +8,7 @@ pipeline {
         }
         stage('docker') {
             steps {
-                sh 'docker build -t sci-calc . && docker tag sci-calc custardapple08/sci-calc && docker push custardapple08/sci-calc   '
+                sh 'docker build -t sci-calc . && docker tag sci-calc custardapple08/sci-calc && docker push custardapple08/sci-calc '
             }
         }
     }
