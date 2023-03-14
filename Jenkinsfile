@@ -4,10 +4,20 @@ pipeline {
             maven 'maven'
     }
     stages {
-        stage('build') {
+        stage('Build JAR file') {
             steps {
                 sh 'mvn clean install'
             }
+        }
+        stage('Create Container') {
+           steps {
+                dockerImage = docker.build("custardapple08/sci-calc:latest")
+            }
+        }
+        stage('Push image') {
+                withDockerRegistry([ credentialsId: "jenkinsID", url: "" ]) {
+                dockerImage.push()
+             }
         }
     }
 }
