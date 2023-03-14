@@ -1,7 +1,7 @@
 - name: playbook for Miniproject
   hosts: localhost
   tasks:
-    - name: Remove old docker image
+    - name: Remove old docker images
       shell: docker image prune -a
     - name: Pull new docker image
       docker_image:
