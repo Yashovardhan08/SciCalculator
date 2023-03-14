@@ -6,12 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo ${PATH}'
-            }
-        }
-        stage('build2') {
-        steps {
-                 sh 'mvn --version'
+                sh 'echo "JELLO"'
             }
         }
     }
