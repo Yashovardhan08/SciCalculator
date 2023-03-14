@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy Using ansible'){
             steps{
-                sh 'ansible-playbook --help'
+                sh 'ansible-playbook playbook.yaml'
             }
         }
     }
