@@ -3,7 +3,7 @@
   tasks:
     - name: Remove old docker images
       shell: docker image prune -a
-    - name: Pull new docker image
+    - name: Pull new docker images
       docker_image:
         name: custardapple08/sci-calc
         source: pull
