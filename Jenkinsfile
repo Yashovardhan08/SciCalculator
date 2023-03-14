@@ -1,7 +1,7 @@
 pipeline {
     agent any
-    environment {
-        PATH = "/opt/homebrew/bin/mvn:$PATH"
+    tools {
+            maven 'Maven 3.3.9'
     }
     stages {
         stage('build') {
