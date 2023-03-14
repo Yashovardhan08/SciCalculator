@@ -11,13 +11,13 @@ pipeline {
         }
         stage('Create Container') {
            steps {
-                dockerImage = docker.build("custardapple08/sci-calc:latest")
+                sh 'docker build -t custardapple08/sci-calc .  '
             }
         }
         stage('Push image') {
             steps{
                 withDockerRegistry([ credentialsId: "jenkinsID", url: "" ]) {
-                    dockerImage.push()
+                    sh 'docker push custardapple08/sci-calc'
                 }
              }
         }
