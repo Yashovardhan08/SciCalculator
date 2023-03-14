@@ -1,9 +1,9 @@
 - name: playbook for Miniproject
   hosts: localhost
   tasks:
-    - name: Remove old images
+    - name: Remove old docker images
       shell: docker image prune -a
-    - name: Pull the new image
+    - name: Pull new docker image
       docker_image:
         name: custardapple08/sci-calc
         source: pull
