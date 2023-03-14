@@ -6,6 +6,11 @@ pipeline {
                 sh 'ls -al'
             }
         }
+        stage('build 2') {
+            withMaven {
+                sh 'mvn --version'
+            }
+        }
 
     }
 }
