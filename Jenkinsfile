@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo "JELL0O"'
+                sh 'echo "JEELL0O"'
             }
         }
     }
