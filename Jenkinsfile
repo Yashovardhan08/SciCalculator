@@ -21,6 +21,11 @@ pipeline {
                 }
              }
         }
+        stage("Print all files"){
+            steps{
+                sh 'ls -al'
+            }
+        }
         stage('Deploy Using ansible'){
             steps{
                 sh 'ansible-playbook playbook.yaml'
