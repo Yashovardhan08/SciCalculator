@@ -4,11 +4,6 @@ pipeline {
             maven 'maven'
     }
     stages {
-        stage('Initialize')
-        {
-            def dockerHome = tool 'MyDocker'
-            env.PATH = "${dockerHome}/bin:${env.PATH}"
-        }
         stage('Build JAR file') {
             steps {
                 sh 'mvn clean install'
@@ -22,7 +17,7 @@ pipeline {
         stage('Push image') {
             steps{
                 withDockerRegistry([ credentialsId: "jenkinsID", url: "" ]) {
-                    sh 'docker push custardapple08/sci-calc'
+                    sh 'docker push custardapple08/sci-calc '
                 }
              }
         }
