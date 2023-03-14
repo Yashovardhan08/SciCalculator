@@ -17,7 +17,7 @@ pipeline {
         stage('Push image') {
             steps{
                 withDockerRegistry([ credentialsId: "jenkinsID", url: "" ]) {
-                    sh 'docker push custardapple08/sci-calc '
+                    sh 'docker push custardapple08/sci-calc'
                 }
              }
         }
