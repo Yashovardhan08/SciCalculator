@@ -8,7 +8,9 @@ pipeline {
         }
         stage('build 2') {
             steps {
-                withMaven {
+                withMaven(
+                    maven: 'mvn',
+                ) {
                     sh 'mvn --version'
                 }
             }
