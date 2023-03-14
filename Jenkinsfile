@@ -15,8 +15,10 @@ pipeline {
             }
         }
         stage('Push image') {
+            steps{
                 withDockerRegistry([ credentialsId: "jenkinsID", url: "" ]) {
-                dockerImage.push()
+                    dockerImage.push()
+                }
              }
         }
     }
