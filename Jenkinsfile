@@ -3,18 +3,13 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                sh 'java --version'
             }
         }
-        stage('build 2') {
-            steps {
-                withMaven(
-                    maven: 'mvn',
-                ) {
-                    sh 'mvn --version'
-                }
+        stage('build2') {
+        steps {
+                 sh 'mvn --version'
             }
         }
-
     }
 }
