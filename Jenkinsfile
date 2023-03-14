@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy Using ansible'){
             steps{
-                echo 'ansible-playbook --help'
+                sh 'ansible-playbook --help'
             }
         }
     }
