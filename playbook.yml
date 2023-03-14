@@ -1,0 +1,13 @@
+- name: playbook for miniproject
+  hosts: localhost
+  tasks:
+    - name: Remove old images
+      shell: docker image prune -a
+    - name: Pull the new image
+      docker_image:
+        name: custardapple08/sci-calc
+        source: pull
+    - name: Run the container from image
+      shell: docker run -id --stop-timeout 10 custardapple08/sci-calc
+    - name: Stop running Containers
+      shell: docker ps -aq | xargs docker stop | xargs docker rm
