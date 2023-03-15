@@ -1,5 +1,12 @@
 package org.sciCalculator;
 
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.config.xml.XmlConfiguration;
+import org.w3c.dom.DOMConfiguration;
+
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
@@ -7,7 +14,14 @@ public class Main {
     public static Long[] factorial = new Long[15];
     public static void main(String[] args){
         Factorial(14);
+
+        Logger logger = LogManager.getLogger(Main.class);
+//        LoggerContext context = (LoggerContext)LogManager.getContext(false);
+//        File file = new File("./../../resources/log4j2.xml");
+
         Boolean loop = true;
+//        loop = false;
+        logger.log(Level.INFO,"Scientific Calculator Running!!");
         while(loop){
             PrintMenu();
             Scanner sc = new Scanner(System.in);
@@ -18,7 +32,10 @@ public class Main {
                     System.out.println("\t \t Enter the number : ");
                     Integer a = sc.nextInt();
                     temp = sc.nextLine();
-                    if(a<15) System.out.println("Factorial of "+ a + " = "+ factorial[a]);
+                    if(a<15){
+                        logger.log(Level.INFO,"Factorial of "+a + " = "+ factorial[a]);
+                        System.out.println("Factorial of "+ a + " = "+ factorial[a]);
+                    }
                     System.out.println();
                     break;
                 }
@@ -29,6 +46,7 @@ public class Main {
                     Double b = sc.nextDouble();
 //                    temp = sc.nextLine();
                     System.out.println( a + " power "+ b+ " = "+ power(a,b));
+                    logger.log(Level.INFO,a + " power "+ b+ " = "+ power(a,b));
                     System.out.println();
                     break;
                 }
@@ -37,6 +55,7 @@ public class Main {
                     Double a = sc.nextDouble();
 //                    temp = sc.nextLine();
                     System.out.println("Natural Log of "+ a + " = "+ NatLog(a));
+                    logger.log(Level.INFO,"Natural Log of "+ a + " = "+ NatLog(a));
                     System.out.println();
                     break;
                 }
@@ -45,6 +64,7 @@ public class Main {
                     Double a = sc.nextDouble();
 //                    temp = sc.nextLine();
                     System.out.println("Square root of "+ a + " = "+ Sqrt(a));
+                    logger.log(Level.INFO,"Square root of "+ a + " = "+ Sqrt(a));
                     System.out.println();
                     break;
                 }
@@ -57,6 +77,7 @@ public class Main {
                 }
             }
         }
+        logger.log(Level.INFO,"Scientific Calculator Exiting");
     }
 
     public static void PrintMenu(){
