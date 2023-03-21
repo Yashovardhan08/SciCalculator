@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/radioactivedevil08/IIITB/sem 8/spe/SciCalculator/target/surefire/surefirebooter-20230315171322808_3.jar /Users/radioactivedevil08/IIITB/sem 8/spe/SciCalculator/target/surefire 2023-03-15T17-13-22_692-jvmRun1 surefire-20230315171322808_1tmp surefire_0-20230315171322808_2tmp"/>
+    <property name="sun.java.command" value="/Users/radioactivedevil08/IIITB/sem 8/spe/SciCalculator/target/surefire/surefirebooter-20230321220109860_3.jar /Users/radioactivedevil08/IIITB/sem 8/spe/SciCalculator/target/surefire 2023-03-21T22-01-09_730-jvmRun1 surefire-20230321220109860_1tmp surefire_0-20230321220109860_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/radioactivedevil08/IIITB/sem 8/spe/SciCalculator/target/test-classes:/Users/radioactivedevil08/IIITB/sem 8/spe/SciCalculator/target/classes:/Users/radioactivedevil08/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/radioactivedevil08/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/radioactivedevil08/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/radioactivedevil08/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/radioactivedevil08/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.1/jackson-databind-2.11.1.jar:/Users/radioactivedevil08/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.1/jackson-annotations-2.11.1.jar:/Users/radioactivedevil08/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.1/jackson-core-2.11.1.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/radioactivedevil08/IIITB/sem 8/spe/SciCalculator/target/surefire/surefirebooter-20230315171322808_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/radioactivedevil08/IIITB/sem 8/spe/SciCalculator/target/surefire/surefirebooter-20230321220109860_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.2"/>
@@ -58,7 +58,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="TestSqrt" classname="TestCalculator" time="0.002"/>
+  <testcase name="TestSqrt" classname="TestCalculator" time="0.001"/>
   <testcase name="TestLog" classname="TestCalculator" time="0"/>
   <testcase name="TestPower" classname="TestCalculator" time="0"/>
 </testsuite>

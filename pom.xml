@@ -94,6 +94,21 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.11.1</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.appenders.log4j</groupId>-->
+<!--            <artifactId>log4j2-elasticsearch-jest</artifactId>-->
+<!--            <version>1.6.1</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.appenders.st</groupId>-->
+<!--            <artifactId>appenders-jackson-st</artifactId>-->
+<!--            <version>1.0.1</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.appenders.logging</groupId>-->
+<!--            <artifactId>appenders-logging</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>
