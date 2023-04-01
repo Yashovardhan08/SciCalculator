@@ -9,5 +9,5 @@
         source: pull
     - name: Run the container from image
       shell: docker run -it -d custardapple08/sci-calc /bin/bash
-    - name: Stop running Containers
-      shell: docker ps -aq | xargs docker stop | xargs docker rm
+#    - name: Stop running Containers
+#      shell: docker ps -aq | xargs docker stop | xargs docker rm
