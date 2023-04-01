@@ -3,8 +3,6 @@ package org.sciCalculator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.config.xml.XmlConfiguration;
-import org.w3c.dom.DOMConfiguration;
 
 import java.io.File;
 import java.util.Scanner;
@@ -20,12 +18,12 @@ public class Main {
 //        File file = new File("./../../resources/log4j2.xml");
 
         Boolean loop = true;
-//        loop = false;
         logger.log(Level.INFO,"Scientific Calculator Running!!");
         while(loop){
             PrintMenu();
             Scanner sc = new Scanner(System.in);
             Integer option = sc.nextInt();
+
             String temp = sc.nextLine();
             switch (option){
                 case 1:{
