@@ -1,0 +1,1 @@
+{"instant":{"epochSecond":1680412092,"nanoOfSecond":181000000},"thread":"main","level":"INFO","loggerName":"org.sciCalculator.Main","message":"Scientific Calculator Running!!","endOfBatch":false,"loggerFqcn":"org.apache.logging.log4j.spi.AbstractLogger","threadId":1,"threadPriority":5,"@timestamp":"2023-04-02T10:38:12.027+0530"}

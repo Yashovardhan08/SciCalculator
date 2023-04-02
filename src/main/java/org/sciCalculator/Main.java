@@ -31,6 +31,7 @@ public class Main {
                         logger.log(Level.INFO,"Factorial of "+a + " = "+ factorial[a]);
                         System.out.println("Factorial of "+ a + " = "+ factorial[a]);
                     }
+                    Integer abdsf =2349;
                     System.out.println();
                     break;
                 }
