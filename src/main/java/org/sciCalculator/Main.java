@@ -14,9 +14,6 @@ public class Main {
         Factorial(14);
 
         Logger logger = LogManager.getLogger(Main.class);
-//        LoggerContext context = (LoggerContext)LogManager.getContext(false);
-//        File file = new File("./../../resources/log4j2.xml");
-
         Boolean loop = true;
         logger.log(Level.INFO,"Scientific Calculator Running!!");
         while(loop){
