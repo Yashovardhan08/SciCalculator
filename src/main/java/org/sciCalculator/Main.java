@@ -32,6 +32,7 @@ public class Main {
                         System.out.println("Factorial of "+ a + " = "+ factorial[a]);
                     }
                     Integer abdsf =2349;
+                    abdsf+=04;
                     System.out.println();
                     break;
                 }
